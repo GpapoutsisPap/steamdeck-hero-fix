@@ -1,0 +1,26 @@
+/* Hero Fix - shows the hero art behind the Game Mode home carousel.
+   Steam's sp.css hides these wrappers with opacity: 0; this forces them visible.
+   To change the image size, edit BOTH 62vh values below. */
+
+:root { --met-hero-art-size: cover !important; }
+
+.QNkOtW3xS-yj6LviWHvnd,
+._30D-80Lg-Luy-KxOumBlaY {
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+
+img._3Mp8R2wnoCl6ko0HAX8IHE {
+  height: 62vh !important;
+  object-position: center top !important;
+}
+
+._30D-80Lg-Luy-KxOumBlaY::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: calc(62vh - 110px);
+  height: 110px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #000);
+  pointer-events: none;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Hero Fix",
+  "author": "Giwrgos",
+  "version": "v1.0",
+  "target": "Home",
+  "manifest_version": 8,
+  "description": "Restores the hero image behind the home carousel after the Steam class rename, scaled to 62vh with a fade into black.",
+  "inject": {
+    "shared.css": ["SP"]
+  }
+}
